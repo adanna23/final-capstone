@@ -1,0 +1,1 @@
+web: gunicorn capstone_inventory:app --preload --timeout 60

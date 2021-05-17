@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <header class="hero-section">
+        <h3 class="header-text">Adanna Eleje! </h3>
+    </header>
+
+    <div class="container">
+        <h3>View your profile details here {{ current_user.email}} </h3> 
+
+        <ul class="list-group">
+            <li class="list-group-item">Email: {{ current_user.email}} </li>
+            <li class="list-group-item">Token: {{ current_user.token}} </li>
+        </ul>
+    </div>
+
+    <!--footer-->
+<div class="footer py-4">
+    <div class="container-fluid text-center">
+      <p>
+        <!-- COPYRIGHT -->
+        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart-o" aria-hidden="true"></i> Adanna Eleje </a>
+        <!-- COPYRIGHT -->
+      </p>
+    </div>
+
+{% endblock content %}
+

@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!--Flask Flashed Message to user-->
+<div class="container">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+         {% if messages %}
+            {% for cat, msg in messages%}
+             {% if cat == 'user-created' %}
+                <div class="alert alert-success">
+                    {{ msg }}
+                    <button type = "button" class = 'close' data-dismiss = 'alert' >&times;</button>
+                </div>
+
+                {% elif cat == 'auth-success' %}
+                <div class="alert alert-success">
+                    {{ msg }}
+                    <button type = "button" class = 'close' data-dismiss = 'alert' >&times;</button>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+</div>
+
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+        </div>
+      </div>
+      
+    </header>
+
+<!--body-->
+
+    <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+      <div class="row">
+        <div class="col-lg-4">
+
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Nature</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+          </div>
+
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Portrait</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">People</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Architecture</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_4.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Travel</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_7.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="image-wrap-2">
+            <div class="image-info">
+              <h2 class="mb-3">Movie Set</h2>
+              <a href="single.html" class="btn btn-outline-white py-2 px-4">More Photos</a>
+            </div>
+            <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!--footer-->
+    <div class="footer py-4">
+      <div class="container-fluid text-center">
+        <p>
+          <!-- COPYRIGHT -->
+          Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="icon-heart-o" aria-hidden="true"></i> Adanna Eleje </a>
+          <!-- COPYRIGHT -->
+        </p>
+      </div>
+    </div>
+
+    
+
+    
+    
+  </div>
+{% endblock content %}
