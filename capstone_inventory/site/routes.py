@@ -41,3 +41,7 @@ def portrait():
 @site.route('/blackandwhite')
 def blackandwhite():
     return render_template('blackandwhite.html')
+
+@site.route('/services')
+def services():
+    return render_template('services.html')

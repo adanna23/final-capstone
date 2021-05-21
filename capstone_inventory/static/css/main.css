@@ -269,20 +269,10 @@ a {
     opacity: 0;
     visibility: hidden;
     color: #fff; }
-  .team-member:hover:before, .team-member:focus:before, .team-member:active:before {
-    opacity: 1;
-    visibility: visible; }
   .team-member:hover img, .team-member:focus img, .team-member:active img {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
-
-    .mejs__container {
-  width: 100% !important; }
-
-@media (max-width: 991.98px) {
-  .display-4 {
-    font-size: 1.8rem; } }
 
 .btn-outline-white {
   border-color: #fff;
