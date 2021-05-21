@@ -17,3 +17,27 @@ def contact():
 @site.route('/about')
 def about():
     return render_template('about.html')
+
+@site.route('/architecture')
+def architecture():
+    return render_template('architecture.html')
+
+@site.route('/art')
+def art():
+    return render_template('art.html')
+
+@site.route('/nature')
+def nature():
+    return render_template('nature.html')
+
+@site.route('/people')
+def people():
+    return render_template('people.html')
+
+@site.route('/portrait')
+def portrait():
+    return render_template('portrait.html')
+
+@site.route('/blackandwhite')
+def blackandwhite():
+    return render_template('blackandwhite.html')
